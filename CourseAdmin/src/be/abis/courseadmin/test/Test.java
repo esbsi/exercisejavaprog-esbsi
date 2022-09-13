@@ -64,7 +64,7 @@ public class Test {
         String testString = "this sentence. should be capitalized. ";
         StringUtils.capitalize(testString);
 
-        System.out.println("This has been written by Clau");
+        System.out.println("This has been written by Clau for testing");
 
 
 
