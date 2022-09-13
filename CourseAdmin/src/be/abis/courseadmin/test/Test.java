@@ -65,6 +65,7 @@ public class Test {
         StringUtils.capitalize(testString);
 
         System.out.println("This has been written by Clau for testing");
+        System.out.println("all ur base r belong2us");
 
 
 
