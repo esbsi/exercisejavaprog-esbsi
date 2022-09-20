@@ -5,8 +5,14 @@ public class Company {
     private String name;
     private int companyNumber;
 
+
     public Company(String name) {
         this.name = name;
+    }
+
+    public Company(String name, int companyNumber) {
+        this.name = name;
+        this.companyNumber = companyNumber;
     }
 
     public String getName() {
@@ -27,4 +33,9 @@ public class Company {
         System.out.println(name);
     }
 
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

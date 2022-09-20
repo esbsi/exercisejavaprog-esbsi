@@ -1,13 +1,15 @@
 package be.abis.courseadmin.enums;
 
+import be.abis.courseadmin.model.Person;
+
 public enum Gender {
 
     FEMALE("f", "she", "her", "her"),MALE("m", "he", "him", "his"),OTHER("o", "they", "them", "their");
 
-    private String description;
-    private String personalPronoun;
-    private String objectivePronoun;
-    private String possessivePronoun;
+    private final String description;
+    private final String personalPronoun;
+    private final String objectivePronoun;
+    private final String possessivePronoun;
 
 
     Gender(String description, String personalPronoun, String objectivePronoun, String possessivePronoun) {

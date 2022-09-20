@@ -39,5 +39,12 @@ public class CompanySession extends Session {
         System.out.println("This session is offered to you by " + organizer.getName() + "." + (participants==0? "" : " There will be " + participants + " participants."));
     }
 
+    @Override
+    public double calculatePrice() {
+        this.price = participants * this.getCourse().getDays() * this.getCourse().getPriceDay();
+        System.out.println("The price for the " + this.getClass().getSimpleName() + " is " + price + ".");
+        return price;
+    }
+
 
 }

@@ -5,6 +5,7 @@ public class Course {
     private String title;
     private int days;
     private double priceDay;
+    private double reductionPercent = 15;
 
     public void setDays(int days) {
         this.days = days;
@@ -34,12 +35,23 @@ public class Course {
     }
 
     public void printInfo(){
-        System.out.println(title + ", " + days + " days, " + priceDay + " euros/day.");
+        System.out.println("\n" + title + ", " + days + " days, " + priceDay + " euros/day. Total: " + calculateTotalPrice(15) + " euros. After " + reductionPercent + "% reduction: " + calculateTotalPrice(reductionPercent) + " euros.");
     }
 
     public double calculateTotalPrice() {
-        double totalPrice = priceDay * days;
-        System.out.println(totalPrice);
-        return totalPrice;
+        return priceDay * days;
     }
+
+    public double calculateTotalPrice(double reductionPercent) {
+        return priceDay * days * (1 - reductionPercent/100);
+    }
+
+
+    @Override
+    public String toString() {
+        return title;
+    }
+
+
+
 }

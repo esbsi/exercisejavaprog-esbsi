@@ -61,7 +61,4 @@ public abstract class Session extends Service {
 
 
 
-
-//p285.9    public abstract be.abis.courseadmin.model.Person getOrganizer();
-
 }

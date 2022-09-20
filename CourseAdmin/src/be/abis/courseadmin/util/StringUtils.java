@@ -9,7 +9,6 @@ public class StringUtils {
                 s = s.substring(0, i) + s.substring(i, i+1).toUpperCase() + s.substring(i+1);
             }
         }
-        System.out.println(s);
         return s;
     }
 
