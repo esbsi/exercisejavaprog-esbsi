@@ -53,10 +53,6 @@ public class Test {
         bobJanssens.printHobbies();
 
 
-//incomplete        System.out.println(johnDoe.getHobbies());
-
-
-
 
         PublicSession java1 = new PublicSession(javaDev, "05/09/2022", abis, maryJones);
         CompanySession javaIbm1 = new CompanySession(javaDev, "24/10/2022", abis, bobJanssens, ibm, 5);
