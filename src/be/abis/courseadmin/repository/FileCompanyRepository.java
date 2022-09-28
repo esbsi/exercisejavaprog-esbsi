@@ -72,7 +72,7 @@ public class FileCompanyRepository implements CompanyRepository{
 
         Company companyToDelete = findCompany(id);
         try (PrintWriter writer = new PrintWriter(new FileWriter("/temp/javacourses/companies.txt", true))) {
-            writer.append();
+            ;
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
