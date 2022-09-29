@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="All Places" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JavaB.2:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0ed6b93-2a4b-4f26-9fe5-46ad9e28a657" name="Changes" comment="java course">
+      <change afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/lambda/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/lambda/Reduction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/util/CalculatorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/repository/FileCompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/repository/FileCompanyRepository.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2EU51qaUST9PkBXC5YTliVofqjL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_directory_selection": "C:/Users/Duser/IdeaProjects/JavaB.2/src/be/abis/courseadmin/model",
+    "last_opened_file_path": "C:/Users/Duser/IdeaProjects/JavaB.2/src/be/abis/courseadmin/exception",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.import"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Duser\IdeaProjects\JavaB.2\src\be\abis\courseadmin\exception" />
+      <recent name="C:\Users\Duser\IdeaProjects\JavaB.2\src\be\abis\courseadmin\repository" />
+      <recent name="C:\Users\Duser\IdeaProjects\JavaB.2\src" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="be.abis.courseadmin.service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="be.abis.courseadmin.test" />
+      <recent name="be.abis.courseadmin.enums" />
+      <recent name="be.abis.courseadmin.model" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.abis.courseadmin.model" />
+      <recent name="be.abis.courseadmin.test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.abis.courseadmin.exception" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.abis.courseadmin.test.Test" />
+      <module name="JavaB.2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.abis.courseadmin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CourseAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.abis.courseadmin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.abis.courseadmin.test" />
+      <option name="MAIN_CLASS_NAME" value="be.abis.courseadmin.test.CourseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateUtilsTest.dateShouldBeToday" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaB.2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.abis.courseadmin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.abis.courseadmin.test" />
+      <option name="MAIN_CLASS_NAME" value="be.abis.courseadmin.test.DateUtilsTest" />
+      <option name="METHOD_NAME" value="dateShouldBeToday" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemoryArrayCompanyRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CourseAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.abis.courseadmin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.abis.courseadmin.test" />
+      <option name="MAIN_CLASS_NAME" value="be.abis.courseadmin.test.MemoryArrayCompanyRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemoryArrayCompanyRepositoryTest.findCompany" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CourseAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.abis.courseadmin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.abis.courseadmin.test" />
+      <option name="MAIN_CLASS_NAME" value="be.abis.courseadmin.test.MemoryArrayCompanyRepositoryTest" />
+      <option name="METHOD_NAME" value="findCompany" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.DateUtilsTest.dateShouldBeToday" />
+        <item itemvalue="JUnit.MemoryArrayCompanyRepositoryTest" />
+        <item itemvalue="JUnit.MemoryArrayCompanyRepositoryTest.findCompany" />
+        <item itemvalue="JUnit.CourseTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0ed6b93-2a4b-4f26-9fe5-46ad9e28a657" name="Changes" comment="" />
+      <created>1662637109933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662637109933</updated>
+      <workItem from="1662637111135" duration="10521000" />
+      <workItem from="1662706924861" duration="51218000" />
+      <workItem from="1663226867940" duration="23948000" />
+      <workItem from="1663311882148" duration="71000" />
+      <workItem from="1663662484871" duration="6674000" />
+      <workItem from="1663748348531" duration="3610000" />
+      <workItem from="1663763640713" duration="44000" />
+      <workItem from="1663763712182" duration="1050000" />
+      <workItem from="1663764782421" duration="2920000" />
+      <workItem from="1664205039994" duration="13950000" />
+      <workItem from="1664262816683" duration="38180000" />
+    </task>
+    <task id="LOCAL-00001" summary="belong2us">
+      <created>1663073924964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663073924964</updated>
+    </task>
+    <task id="LOCAL-00002" summary="belong2us">
+      <created>1663668555873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663668555873</updated>
+    </task>
+    <task id="LOCAL-00003" summary="java course">
+      <created>1663668914056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663668914056</updated>
+    </task>
+    <task id="LOCAL-00004" summary="java course">
+      <created>1663668972382</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663668972382</updated>
+    </task>
+    <task id="LOCAL-00005" summary="java course">
+      <created>1663669612854</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663669612854</updated>
+    </task>
+    <task id="LOCAL-00006" summary="java course">
+      <created>1663765751064</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663765751064</updated>
+    </task>
+    <task id="LOCAL-00007" summary="java course">
+      <created>1664287665322</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664287665322</updated>
+    </task>
+    <task id="LOCAL-00008" summary="java course">
+      <created>1664290640113</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664290640113</updated>
+    </task>
+    <task id="LOCAL-00009" summary="java course">
+      <created>1664371025514</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664371025514</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="belong2us" />
+    <MESSAGE value="java course" />
+    <option name="LAST_COMMIT_MESSAGE" value="java course" />
+  </component>
+</project>
