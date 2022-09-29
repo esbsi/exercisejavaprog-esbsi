@@ -1,9 +1,6 @@
 package be.abis.courseadmin.test;
 
-import be.abis.courseadmin.exception.CompanyNotFoundException;
-import be.abis.courseadmin.exception.PriceException;
-import be.abis.courseadmin.exception.PriceTooHighException;
-import be.abis.courseadmin.exception.PriceTooLowException;
+import be.abis.courseadmin.exception.*;
 import be.abis.courseadmin.lambda.Calculator;
 import be.abis.courseadmin.repository.CompanyRepository;
 import be.abis.courseadmin.repository.FileCompanyRepository;
@@ -13,13 +10,16 @@ import be.abis.courseadmin.model.Person;
 import be.abis.courseadmin.model.Service;
 import be.abis.courseadmin.model.*;
 import be.abis.courseadmin.repository.MemoryListCompanyRepository;
+import be.abis.courseadmin.service.AbisCompanyService;
+import be.abis.courseadmin.util.DateUtils;
 import be.abis.courseadmin.util.StringUtils;
 
 import java.time.LocalDate;
+import java.util.Collections;
 import java.util.List;
 
 public class Test {
-    public static void main(String[] args) throws CompanyNotFoundException {
+    public static void main(String[] args) throws CompanyNotFoundException, PriceTooHighException, CompanyAlreadyExistsException {
 
 
 
@@ -58,7 +58,7 @@ public class Test {
 
 
         johnDoe.addHobby("Tennis");
-        bobJanssens.addHobbies("Basket", "Lopen", "Zwemmen");
+        bobJanssens.addHobbies("Basket", "Lopen", "Zwemmen", "Lopen");
         maryJones.addHobby("Schaken");
 
         johnDoe.printHobbies();
@@ -66,10 +66,10 @@ public class Test {
 
 
 
-/*        PublicSession java1 = new PublicSession(javaDev, LocalDate.parse("5/9/2022"), abis, maryJones);
-        CompanySession javaIbm1 = new CompanySession(javaDev, LocalDate.parse("24/10/2022"), abis, bobJanssens, ibm, 5);
+        PublicSession java1 = new PublicSession(javaDev, DateUtils.parseDdMMyyyy("5/9/2022"), abis, maryJones);
+        CompanySession javaIbm1 = new CompanySession(javaDev, DateUtils.parseDdMMyyyy("24/10/2022"), abis, bobJanssens, ibm, 5);
 
-        Session[] javaSessions = {java1, javaIbm1};
+/*       Session[] javaSessions = {java1, javaIbm1};
         for (Session session : javaSessions) {
             try {
                 session.calculatePrice();
@@ -78,11 +78,11 @@ public class Test {
             }
             session.printInfo();
         }
-
+*/
         Consultancy advice = new Consultancy("Advice");
 
         Service[] servicesJava = {java1, javaIbm1, advice};
-        for (Service service : servicesJava) {
+ /*       for (Service service : servicesJava) {
             try {
                 service.calculatePrice();
             } catch (PriceTooHighException priceTooHighException){
@@ -92,57 +92,44 @@ public class Test {
               ((Session) service).printInfo();
             }
         }
-
+*/
 
         maryJones.attendCourse(javaDev);
         maryJones.teachCourse(javaDev);
-        System.out.println(maryJones.getRole());
-
-        System.out.println(maryJones);
-        System.out.println(abis);
-        System.out.println(javaDev);
 
         abis.setPriceTooLowExceptionBelowThisSessionPrice(1500);
 
-        try {
+/*        try {
             ibm.requestPriceOfferForCompanySession(scrumIntro, 2, maryJones);
         } catch (PriceException priceTooLowException){
             System.out.println(priceTooLowException.getMessage());
         }
 */
 
+
+
+
+
+        Company asml = new Company("ASML");
+        Company ablynx = new Company("Ablynx");
         CompanyRepository cr = new FileCompanyRepository();
-        List<Company> companyList = cr.getCompanies();
-        for (Company c : companyList){
-            System.out.println(c);}
+        cr.addCompany(ablynx);
 
-/*        cr.addCompany(ibm);
-        for (Company c : cr.getCompanies()){
-            System.out.println(c);}
+        System.out.println(cr.getCompanies());
+
+
+        AbisCompanyService abisCompanyService = new AbisCompanyService();
+ /*       System.out.println(abisCompanyService.sortAllCompaniesByName());
+
+        System.out.println(abisCompanyService.sortAllCompaniesByNumber());
+
+        List<Company> companies1 = cr.getCompanies();
+        Collections.sort(companies1, new Company.SortAllCompaniesByNumberReversedComparator());
+        System.out.println(companies1);
 */
-        try {
-            System.out.println(cr.findCompany(5).getName());
-        } catch (CompanyNotFoundException e) {
-            System.out.println(e.getMessage());
-        }
 
-        System.out.println(cr.findCompany("ttl").getCompanyNumber());
-
-        Calculator calculator = (a, b) -> a*b;
-        System.out.println(calculator.calculate(2.5, 3));
-
- /*
-        {
-            @Override
-            public Double calculate(Double a, int b) {
-                return null;
-            }
-        }
- */
-        System.out.println(javaDev.calculateTotalPrice());
-        System.out.println(javaDev.calculateTotalPrice(25));
-
-//        System.out.println("elefant".(1,3););
+        java1.printInfo();
+        java1.calculatePrice();
 
 
 

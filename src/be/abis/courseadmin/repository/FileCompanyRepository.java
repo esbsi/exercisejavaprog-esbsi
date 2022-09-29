@@ -1,5 +1,6 @@
 package be.abis.courseadmin.repository;
 
+import be.abis.courseadmin.exception.CompanyAlreadyExistsException;
 import be.abis.courseadmin.exception.CompanyNotFoundException;
 import be.abis.courseadmin.model.Company;
 
@@ -41,11 +42,18 @@ public class FileCompanyRepository implements CompanyRepository{
         return foundCompany;
     }
 
-    public void addCompany(Company c){
+    public void addCompany(Company company){
         try (PrintWriter writer = new PrintWriter(new FileWriter("/temp/javacourses/companies.txt", true))) {
-            writer.append("\n" + c.getName());
+            try {
+                if (findCompany(company.getName()) != null){
+                    throw new CompanyAlreadyExistsException("Company " + company + " already exists.");}
+            } catch (CompanyNotFoundException e) {
+                writer.append("\n").append(company.getName());
+                }
         } catch (IOException e) {
             throw new RuntimeException(e);
+        } catch (CompanyAlreadyExistsException e) {
+            System.out.println(e.getMessage());
         }
     }
 

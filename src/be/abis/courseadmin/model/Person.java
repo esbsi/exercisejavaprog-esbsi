@@ -3,6 +3,10 @@ package be.abis.courseadmin.model;
 import be.abis.courseadmin.enums.Gender;
 import be.abis.courseadmin.util.StringUtils;
 
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
 
 /** Person (class) contains the attributes of a person and some related (output) methods.
  * @author Esben
@@ -16,8 +20,8 @@ public class Person implements Instructor, CourseParticipant {
     private String lastName;
     private Gender gender;
     private Company company;
-    private String[] hobbies = new String[10];
-    private int hobbiesIndex;
+    private Set<String> hobbies = new TreeSet<>();
+//    private int hobbiesIndex;
     private String role;
     private static int counter;
     private int personNumber;
@@ -68,13 +72,13 @@ public class Person implements Instructor, CourseParticipant {
         this.lastName = lastName;
     }
 
-    public String[] getHobbies() {
+    public Set<String> getHobbies() {
         return hobbies;
     }
-    public void setHobbies(String[] hobbies) {
+
+    public void setHobbies(Set<String> hobbies) {
         this.hobbies = hobbies;
     }
-
 
     public Gender getGender() {
         return gender;
@@ -103,8 +107,9 @@ public class Person implements Instructor, CourseParticipant {
 
 
     public void addHobby(String hobby) {
-        hobbies[hobbiesIndex] = hobby;
-        hobbiesIndex++;
+        hobbies.add(hobby);
+//        hobbies[hobbiesIndex] = hobby;
+  //      hobbiesIndex++;
     }
 
     public void addHobbies(String... hobbies) {

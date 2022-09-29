@@ -4,6 +4,8 @@ import be.abis.courseadmin.exception.PriceException;
 import be.abis.courseadmin.exception.PriceTooHighException;
 import be.abis.courseadmin.exception.PriceTooLowException;
 
+import java.util.Comparator;
+
 public class Company implements Comparable<Company>{
 
     private int companyNumber;
@@ -71,4 +73,23 @@ public class Company implements Comparable<Company>{
     public int compareTo(Company o) {
         return this.getName().compareTo(o.getName());
     }
+
+    public static class SortAllCompaniesByNumberComparator implements Comparator<Company> {
+       @Override
+        public int compare(Company o1, Company o2) {
+            return o1.getCompanyNumber() - o2.getCompanyNumber();
+        }
+    }
+
+    public static class SortAllCompaniesByNumberReversedComparator implements Comparator<Company>  {
+        @Override
+        public int compare(Company o1, Company o2) {
+            return o2.getCompanyNumber() - o1.getCompanyNumber();
+        }
+    }
+
+
 }
+
+
+

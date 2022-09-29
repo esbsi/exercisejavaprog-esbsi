@@ -7,14 +7,14 @@ public class DateUtils {
 
     static DateTimeFormatter ddMMyyyy = DateTimeFormatter.ofPattern("d/M/yyyy");
 
-    public String formatDdMMyyyy(LocalDate localDate){
-        return ddMMyyyy.format(localDate);
+    public static String formatDdMMyyyy(LocalDate localDate){
+        return localDate.format(ddMMyyyy);
     }
 
-/*    public LocalDate parseDdMMyyyy(String dateString){
-        return ddMMyyyy.parse(dateString);
+    public static LocalDate parseDdMMyyyy(String dateString){
+        return LocalDate.parse(dateString, ddMMyyyy);
     }
-*/
+
 
     public static DateTimeFormatter getDdMMyyyy() {
         return ddMMyyyy;

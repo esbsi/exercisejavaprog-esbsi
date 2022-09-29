@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 import be.abis.courseadmin.util.DateUtils;
+import be.abis.courseadmin.util.DecimalUtils;
 
 public abstract class Session extends Service {
 
@@ -14,6 +15,7 @@ public abstract class Session extends Service {
     private Person instructor;
 //    private DateUtils dateUtils;
     private DateTimeFormatter dateTimeFormatter = DateUtils.getDdMMyyyy();
+
 
 
     public Session(Course course) {
@@ -67,7 +69,7 @@ public abstract class Session extends Service {
 
 
     public double calculatePrice() throws PriceTooHighException {
-        System.out.println("The price for the " + this.getClass().getSimpleName() + " is " + price + ".");
+        System.out.println("The price for the " + this.getClass().getSimpleName() + " is " + DecimalUtils.format(price) + ".");
         return price;
 
     }
@@ -75,3 +77,5 @@ public abstract class Session extends Service {
 
 
 }
+
+// DecimalUtils.belgianDecimalFormat(price)
