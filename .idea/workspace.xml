@@ -13,32 +13,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0ed6b93-2a4b-4f26-9fe5-46ad9e28a657" name="Changes" comment="java course">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/exception/CompanyAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/util/DecimalUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/model/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/model/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/model/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/model/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/model/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/model/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/model/Session.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/repository/CompanyRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/repository/CompanyRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/service/AbisCompanyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/service/AbisCompanyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/service/CompanyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/service/CompanyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/util/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaB.2/be/abis/courseadmin/util/DateUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/model/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/model/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/model/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/model/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/model/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/repository/CompanyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/repository/FileCompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/repository/FileCompanyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/service/AbisCompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/service/AbisCompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/service/CompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/abis/courseadmin/util/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/abis/courseadmin/util/DateUtils.java" afterDir="false" />
-    </list>
+    <list default="true" id="d0ed6b93-2a4b-4f26-9fe5-46ad9e28a657" name="Changes" comment="java course" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -229,7 +204,7 @@
       <workItem from="1663764782421" duration="2920000" />
       <workItem from="1664205039994" duration="13950000" />
       <workItem from="1664262816683" duration="52599000" />
-      <workItem from="1664454832469" duration="6976000" />
+      <workItem from="1664454832469" duration="7086000" />
     </task>
     <task id="LOCAL-00001" summary="belong2us">
       <created>1663073924964</created>
@@ -308,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664436938700</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="java course">
+      <created>1664463224592</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664463224592</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
