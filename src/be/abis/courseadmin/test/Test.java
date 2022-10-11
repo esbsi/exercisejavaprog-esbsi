@@ -11,10 +11,13 @@ import be.abis.courseadmin.model.Service;
 import be.abis.courseadmin.model.*;
 import be.abis.courseadmin.repository.MemoryListCompanyRepository;
 import be.abis.courseadmin.service.AbisCompanyService;
+import be.abis.courseadmin.service.AbisEnrolmentService;
+import be.abis.courseadmin.service.EnrolmentService;
 import be.abis.courseadmin.util.DateUtils;
 import be.abis.courseadmin.util.StringUtils;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -32,8 +35,6 @@ public class Test {
 
 /* These are the companies. */
 
-
-
         CompanyRepository companies = new FileCompanyRepository();
 
         Company ttl = companies.findCompany("TTL");
@@ -49,6 +50,7 @@ public class Test {
         Person johnDoe = new Person("John", "Doe", Gender.MALE);
 
         Person[] persons = {maryJones, bobJanssens, johnDoe};
+        List<Person> personList = Arrays.asList(persons);
 
 
         System.out.println("\n" + Person.getCounter() + " Persons created.");
@@ -68,6 +70,9 @@ public class Test {
 
         PublicSession java1 = new PublicSession(javaDev, DateUtils.parseDdMMyyyy("5/9/2022"), abis, maryJones);
         CompanySession javaIbm1 = new CompanySession(javaDev, DateUtils.parseDdMMyyyy("24/10/2022"), abis, bobJanssens, ibm, 5);
+
+        java1.addEnrolment(bobJanssens);
+        java1.addEnrolment(johnDoe);
 
 /*       Session[] javaSessions = {java1, javaIbm1};
         for (Session session : javaSessions) {
@@ -107,9 +112,6 @@ public class Test {
 */
 
 
-
-
-
         Company asml = new Company("ASML");
         Company ablynx = new Company("Ablynx");
         CompanyRepository cr = new FileCompanyRepository();
@@ -130,6 +132,17 @@ public class Test {
 
         java1.printInfo();
         java1.calculatePrice();
+
+        EnrolmentService abisEnrolmentService = new AbisEnrolmentService();
+        System.out.println(abisEnrolmentService.sortByPersonNumber(java1.getEnrolments()));
+        abisEnrolmentService.sortByLastName(personList);
+        System.out.println(personList);
+        abisEnrolmentService.sortByFirstName(personList);
+        System.out.println(personList);
+        abisEnrolmentService.sortByLastThenFirstName(java1.getEnrolments());
+        System.out.println(java1.getEnrolments());
+
+        java1.printSortedParticipantList();
 
 
 

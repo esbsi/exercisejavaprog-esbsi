@@ -9,11 +9,11 @@ import java.util.TreeSet;
 
 
 /** Person (class) contains the attributes of a person and some related (output) methods.
- * @author Esben
+ * @author esbsi
  */
 
 
-public class Person implements Instructor, CourseParticipant {
+public class Person implements Instructor, CourseParticipant, Comparable<Person> {
 
 
     private String firstName;
@@ -153,6 +153,11 @@ public class Person implements Instructor, CourseParticipant {
         @Override
         public String toString() {
             return firstName + " " + lastName;
+        }
+
+        @Override
+        public int compareTo(Person person){
+            return this.personNumber - person.personNumber;
         }
 
 

@@ -1,5 +1,9 @@
 package be.abis.courseadmin.model;
 
+import be.abis.courseadmin.service.AbisEnrolmentService;
+import be.abis.courseadmin.service.EnrolmentService;
+import org.w3c.dom.ls.LSOutput;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -79,9 +83,15 @@ public class PublicSession extends Session {
         return organizer;
     }
 
-
     public void printInfo() {
         super.printInfo();
+    }
+
+    public void printSortedParticipantList(){
+        EnrolmentService enrolmentService = new AbisEnrolmentService();
+        enrolments = enrolmentService.sortByPersonNumber(enrolments);
+        enrolments.forEach(courseParticipant -> CourseParticipant.printNameAndCompany(courseParticipant));
+        enrolments.forEach(CourseParticipant::printNameAndCompany);
     }
 
 
